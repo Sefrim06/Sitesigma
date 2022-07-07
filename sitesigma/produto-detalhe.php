@@ -18,7 +18,7 @@ $id = $_GET['id'];
 </div>
 <div class = "row">
     <div class = "col">Voltar</div>
-    <div class = "col">Comprar/div>
+    <div class = "col">
 </div>
 </div>
 <?php
