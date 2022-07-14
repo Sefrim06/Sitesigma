@@ -1,17 +1,21 @@
 <?php
 
-include_once './includes/_dados.php';
 include_once './includes/_head.php';
 include_once './includes/_header.php';
 include_once './includes/_banco.php';
-
 ?>
 
 <div class = "container">
     <h2>Promoção</h2>
     <div class = "row mt-5">
-        
         <?php
+        $sql = "SELECT * FROM categorias WHERE Ativo = 1";
+
+        $exec = mysqli_query($conn,$sql);
+        $numProdutos = mysqli_num_rows($exec);
+        while ($dados = mysqli_fetch_assoc($exec) ){
+            echo '<h1>'.$dados['Nome'].'</h1>';
+        }
 
 for ($i = 0; $i <30 ; $i++) {
 ?>
