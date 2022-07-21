@@ -5,6 +5,7 @@ include_once './includes/_header.php';
 include_once './includes/_banco.php';
 
 
+
 if(isset( $_POST['txtNome']) ){
     $nome = strtoupper( $_POST['txtNome']);
     echo $nome;

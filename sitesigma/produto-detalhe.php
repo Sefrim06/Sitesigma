@@ -6,13 +6,13 @@ include_once './includes/_banco.php';
 $id = $_GET['id'];
 
 ?>
-<div class = "conatiner">
+<div class = "container">
     <div class = "col">
-             <h1><?php echo $produtos[$id]['nome'];?></h1>
-             <h1><?php echo $produtos [$id]['descricao'];?></h1>
-             <h1><?php echo $produtos [$id]['preco'];?></h1>
-             <img src ="./content/<?php echo $produtos[$id]['imagem']?>">
-             <h4>R$ <?php echo $produtos[$id]['preco'];?></h4>
+             <h1><?php echo $produtos ['nome'];?></h1>
+             <h1><?php echo $produtos ['descricao'];?></h1>
+             <h1><?php echo $produtos ['preco'];?></h1>
+             <img src ="./content/<?php echo $produto ['imagem']?>">
+             <h4>R$ <?php echo $produtos['preco'];?></h4>
    </div>
 </div>
 <div class = "row">
